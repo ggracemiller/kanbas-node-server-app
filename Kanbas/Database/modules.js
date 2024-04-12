@@ -1,7 +1,7 @@
 export default [
   {
     course: "MATH123401",
-    _id: "M1-1",
+    _id: "M1-1-MATH123401",
     title: "Week 0 - INTRO",
     subsections: [
       {
@@ -76,7 +76,7 @@ export default [
   },
   {
     course: "MATH123401",
-    _id: "M1-2",
+    _id: "M1-2-MATH123401",
     title: "Week 1 - HTML",
     subsections: [
       {
@@ -120,7 +120,7 @@ export default [
   },
   {
     course: "HIST123401",
-    _id: "M1-1",
+    _id: "M1-1-HIST123401",
     title: "Week 0 - INTRO",
     subsections: [
       {
@@ -195,7 +195,7 @@ export default [
   },
   {
     course: "HIST123401",
-    _id: "M1-2",
+    _id: "M1-2-HIST123401",
     title: "Week 1 - HTML",
     subsections: [
       {
@@ -239,7 +239,7 @@ export default [
   },
   {
     course: "PHYS123401",
-    _id: "M1-1",
+    _id: "M1-1-PHYS123401",
     title: "Week 0 - INTRO",
     subsections: [
       {
@@ -314,7 +314,7 @@ export default [
   },
   {
     course: "PHYS123401",
-    _id: "M1-2",
+    _id: "M1-2-PHYS123401",
     title: "Week 1 - HTML",
     subsections: [
       {
@@ -358,7 +358,7 @@ export default [
   },
   {
     course: "COS123401",
-    _id: "M1-1",
+    _id: "M1-1-COS123401",
     title: "Week 0 - INTRO",
     subsections: [
       {
@@ -433,7 +433,7 @@ export default [
   },
   {
     course: "COS123401",
-    _id: "M1-2",
+    _id: "M1-2-COS123401",
     title: "Week 1 - HTML",
     subsections: [
       {
@@ -477,7 +477,7 @@ export default [
   },
   {
     course: "COS123501",
-    _id: "M1-1",
+    _id: "M1-1-COS123501",
     title: "Week 0 - INTRO",
     subsections: [
       {
@@ -552,7 +552,7 @@ export default [
   },
   {
     course: "COS123501",
-    _id: "M1-2",
+    _id: "M1-2-COS123501",
     title: "Week 1 - HTML",
     subsections: [
       {
@@ -596,7 +596,7 @@ export default [
   },
   {
     course: "ENGW123401",
-    _id: "M1-1",
+    _id: "M1-1-ENGW123401",
     title: "Week 0 - INTRO",
     subsections: [
       {
@@ -671,7 +671,7 @@ export default [
   },
   {
     course: "ENGW123401",
-    _id: "M1-2",
+    _id: "M1-2-ENGW123401",
     title: "Week 1 - HTML",
     subsections: [
       {
@@ -715,7 +715,7 @@ export default [
   },
   {
     course: "GYM123401",
-    _id: "M1-1",
+    _id: "M1-1-GYM123401",
     title: "Week 0 - INTRO",
     subsections: [
       {
@@ -790,7 +790,7 @@ export default [
   },
   {
     course: "GYM123401",
-    _id: "M1-2",
+    _id: "M1-2-GYM123401",
     title: "Week 1 - HTML",
     subsections: [
       {
@@ -834,7 +834,7 @@ export default [
   },
   {
     course: "CS123401",
-    _id: "M1-1",
+    _id: "M1-1-CS123401",
     title: "Week 0 - INTRO",
     subsections: [
       {
@@ -909,7 +909,7 @@ export default [
   },
   {
     course: "CS123401",
-    _id: "M1-2",
+    _id: "M1-2-CS123401",
     title: "Week 1 - HTML",
     subsections: [
       {
