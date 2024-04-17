@@ -12,3 +12,5 @@ export const findCourseByCredentials = (coursename, password) =>
 export const updateCourse = (courseId, course) =>
   model.updateOne({ _id: courseId }, { $set: course });
 export const deleteCourse = (courseId) => model.deleteOne({ _id: courseId });
+export const findCourseByStringId = (courseStringId) =>
+  model.findOne({ courseId: courseStringId });

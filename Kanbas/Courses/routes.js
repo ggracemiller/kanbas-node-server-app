@@ -1,27 +1,12 @@
-import Database from "../Database/index.js";
+import * as dao from "./dao.js";
+
 export default function CourseRoutes(app) {
-  app.get("/api/courses/:id", (req, res) => {
-    const { id } = req.params;
-    const course = Database.courses.find((c) => c._id === id);
-    if (!course) {
-      res.status(404).send("Course not found");
-      return;
-    }
-    res.send(course);
-  });
-
-  app.post("/api/courses", (req, res) => {
-    const course = { ...req.body, _id: new Date().getTime().toString() };
-    Database.courses.push(course);
-    res.send(course);
-  });
-
   const createCourse = async (req, res) => {
     const course = await dao.createCourse(req.body);
     res.json(course);
   };
   const deleteCourses = async (req, res) => {
-    const status = await dao.deleteCourse(req.params.courseId);
+    const status = await dao.deleteCourse(req.params.id);
     res.json(status);
   };
   const findAllCourses = async (req, res) => {
@@ -29,15 +14,19 @@ export default function CourseRoutes(app) {
     res.json(course);
   };
   const findCourseById = async (req, res) => {
-    const course = dao.findUserById(userId);
+    const id = req.params.id;
+    const course = await dao.findCourseById(id);
     res.json(course);
   };
   const updateCourse = async (req, res) => {
-    const { courseId } = req.params;
-    const status = await dao.updateCourse(courseId, req.body);
-    const currentUser = await dao.findUserById(courseId);
-    req.session["currentUser"] = currentUser;
+    const { id } = req.params;
+    const status = await dao.updateCourse(id, req.body);
     res.json(status);
+  };
+  const findCourseByStringId = async (req, res) => {
+    const id = req.params.id;
+    const course = await dao.findCourseByStringId(id);
+    res.json(course);
   };
 
   app.get("/api/courses/:id", findCourseById);
@@ -45,4 +34,5 @@ export default function CourseRoutes(app) {
   app.delete("/api/courses/:id", deleteCourses);
   app.post("/api/courses", createCourse);
   app.get("/api/courses", findAllCourses);
+  app.get("/api/courses/name/:id", findCourseByStringId);
 }
